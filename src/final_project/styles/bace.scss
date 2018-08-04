@@ -1,0 +1,30 @@
+@import "./header.scss";
+@import "./variebles.scss";
+@import "./mixins.scss";
+
+html {
+    background: #fafafa
+}
+
+body {
+    min-width: 1200px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    background: $basic-background;
+    font-family: Arial, Helvetica, sans-serif;
+    position: $relative-position;
+}
+
+a {
+    text-decoration: none;
+    &:active {
+        color: $dark-grey;
+    }
+    &:visited {
+        color: $dark-grey;
+    }
+    &:hover {
+        color: $dark-grey;
+    }
+}

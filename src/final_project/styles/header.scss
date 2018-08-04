@@ -1,0 +1,76 @@
+@import "./variebles.scss";
+@import "./mixins.scss";
+
+.page-header {
+    width: $max-width;
+    height: 80px;
+    font-size: 12px;
+    color: $dark-grey;
+    box-shadow: 0 1px 1px 0px #e4e4e4;
+    @include display-flex;
+    align-items: center;
+    &__logo {
+        margin-left: $margin-right;
+        cursor: pointer;
+    }
+    &__navigation {
+        width: 45%;
+        padding-left: 2%;
+        display: flex;
+        justify-content: start;
+        list-style-type: none;
+        cursor: pointer;
+        &__items {
+            margin-right: 2%;
+            position: $relative-position;
+            .navigation_item {
+                margin: 0;
+                padding: 0;
+                width: 135%;
+                list-style-type: none;
+                position: $absolute-position;
+                background-color: $basic-background;
+                display: none;
+                box-shadow: 3px 3px 2px 0 #b6b6b6b4;
+                > li {
+                    margin-top: 8px;
+                    padding-top: 8px;
+                    padding-left: $padding-left/2;
+                    padding-bottom: 3px;
+                    width: $max-width;
+                    height: $max-width;
+                    border-top: solid 1px #cfcfcf;    
+                }
+            }
+        }
+        .down {
+            width: 7px;
+            height: 7px;
+            margin-left: $padding-left/2;
+        }
+    }
+    &__contact {
+        margin-right: $margin-right;
+    }
+}
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    &__name {
+        margin-right: $padding-left/2;
+    }
+    &__image {
+        width: 40px;
+        height: 40px;
+        border-radius: $max-width/2;
+        display: block;
+        cursor: pointer;
+    }
+    &__icon {
+        width: 15px;
+        height: 15px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+}

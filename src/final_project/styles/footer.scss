@@ -1,0 +1,75 @@
+@import "./variebles.scss";
+@import "./mixins.scss";
+
+.page-footer {
+    width: $max-width;
+    background-color: $dark-grey;
+    @include flex-column;
+    align-items: center;
+    color: #dedede;
+    font-size: 14px;
+    line-height: 1.79;
+    &__info {
+        margin-left: $margin-right;
+        margin-right: $margin-right;
+        margin-top: 41px;
+        margin-bottom: 40px;
+        @include display-flex;
+    }
+    &__author {
+        margin-bottom: 40px;
+    }
+}
+
+.page-footer__nav {
+    @include display-flex;
+}
+
+.nav-items {
+    @include flex-column;
+    justify-content: start;
+    width: 170px;
+    .nav-information {
+        font-size: 14px;
+        line-height: 1.79;
+        #telephone {
+            margin-top: 23px;
+        }
+    }
+}
+
+.nav-title {
+    font-size: 18px;
+    line-height: 1.67;
+    margin-bottom: 19px;
+    color: $basic-background;
+    cursor: pointer;
+}
+
+.nav-item {
+    cursor: pointer;
+    &:hover {
+        font-weight: 600;
+        color: $basic-background;
+        transform: scale(1.03); 
+    }
+}
+
+.page-footer__form {
+    width: 50%;
+    .form_input {
+        width: 335px;
+        height: 35px;
+        background-color: $dark-grey;
+        border: solid 1px $grey;
+        padding-left: $padding-left;
+        color: #dedede;
+        margin-right: 4%;
+    }
+    > img {
+        width: 24px;
+        height: 24px;
+        margin-top: 15px;
+        margin-right: $padding-left;
+    }
+}
